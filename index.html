@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Exchange</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        form {
+            display: inline-block;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h2>Place Order</h2>
+        <form id="openOrderForm">
+            <label for="symbol">Symbol:</label>
+            <input type="text" id="symbol" name="symbol" required>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+            <label for="price">Price:</label>
+            <input type="number" id="price" name="price" required>
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Close Order</h2>
+        <form id="closeOrderForm">
+            <label for="orderId">Order ID:</label>
+            <input type="text" id="orderId" name="orderId" required>
+            <button type="submit">Close Order</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Deposit Coins</h2>
+        <form id="depositForm">
+            <label for="coin">Coin:</label>
+            <input type="text" id="coin" name="coin" required>
+            <label for="amountDeposit">Amount:</label>
+            <input type="number" id="amountDeposit" name="amountDeposit" required>
+            <button type="submit">Deposit</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Withdraw Coins</h2>
+        <form id="withdrawForm">
+            <label for="coinWithdraw">Coin:</label>
+            <input type="text" id="coinWithdraw" name="coinWithdraw" required>
+            <label for="amountWithdraw">Amount:</label>
+            <input type="number" id="amountWithdraw" name="amountWithdraw" required>
+            <button type="submit">Withdraw</button>
+        </form>
+    </section>
+
+    <!-- Add JavaScript for form submission and interaction -->
+
+</body>
+</html>
